@@ -3,12 +3,13 @@ const generateManager = function (manager) {
         <div class="cards">
             <div class="card-header">
                 <h3>${manager.name}</h3>
-                <h4>Manager</h4><i class="fa fa-coffee" aria-hidden="true"></i>
+                <hr class="line-spacer">
+                <h4>Manager <i class="fa fa-coffee" aria-hidden="true"></i></h4>
             </div>
             <div class="card-body">
-                <p class="id">ID: ${manager.id}</p>
+                <p class="id">ID: <span class="body-input">${manager.id}</span></p>
                 <p class="email">Email: <a href="mailto:${manager.email}">${manager.email}</a></p>
-                <p class="office">Office Number: ${manager.officeNumber}</p>
+                <p class="office">Office Number: <span class="body-input">${manager.officeNumber}</span></p>
             </div>
         </div>
     `;
@@ -19,12 +20,13 @@ const generateEngineer = function (engineer) {
         <div class="cards">
             <div class="card-header">
                 <h3>${engineer.name}</h3>
-                <h4>Engineer</h4><i class="fa fa-desktop" aria-hidden="true"></i>
+                <hr class="line-spacer">
+                <h4>Engineer <i class="fa fa-desktop" aria-hidden="true"></i></h4>
             </div>
             <div class="card-body">
-                <p class="id">ID: ${engineer.id}</p>
+                <p class="id">ID: <span class="body-input">${engineer.id}</span></p>
                 <p class="email">Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
-                <p class="github">Github: <a href="https://github.com/${engineer.github}">${engineer.github}</a></p>
+                <p class="github">GitHub: <a href="https://github.com/${engineer.github}" target="_blank" rel="noopener noreferrer">${engineer.github}</a></p>
             </div>
         </div>
     `;
@@ -35,19 +37,20 @@ const generateIntern = function (intern) {
         <div class="cards">
             <div class="card-header">
                 <h3>${intern.name}</h3>
-                <h4>Intern</h4><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                <hr class="line-spacer">
+                <h4>Intern <i class="fa fa-graduation-cap" aria-hidden="true"></i></h4>
             </div>
             <div class="card-body">
-                <p class="id">ID: ${intern.id}</p>
+                <p class="id">ID: <span class="body-input">${intern.id}</span></p>
                 <p class="email">Email: <a href="mailto:${intern.email}">${intern.email}</a></p>
-                <p class="school">School: ${intern.school}</p>
+                <p class="school">School: <span class="body-input">${intern.school}</span></p>
             </div>
         </div>
     `;
 };
 
 // Push array to HTML
-generateHTML = (data) => {
+renderInput = (data) => {
   pageArray = [];
 
   for (let i = 0; i < data.length; i++) {
@@ -92,27 +95,32 @@ const generateTeamPage = function (employeeCards) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
     <title>Meet My Team</title>
   </head>
   <body>
       <header>
           <nav class="nav" id="nav">
-              <a href="#home" id="home">Meet My Team</a>
+              <a href="#home" id="home" class="team-name">Team MAKER</a>
           </nav>
       </header>
       <main>
-          <div class="container" id="team-cards">
-                <!-- Display Cards -->
-                ${employeeCards}
-          </div>
+        <h1>Meet My Team</h1>
+        <hr id="header-spacer">
+        <div class="container" id="team-cards">
+              <!-- Display Cards -->
+              ${employeeCards}
+        </div>
       </main>
       <footer>
         <h3>Designed By:</h3>
-        <p><a href="http://github.com/imjustSahen">imjustSahen</a></p>
+        <p><a href="http://github.com/imjustSahen" target="_blank" rel="noopener noreferrer">imjustSahen</a></p>
       </footer>
     </body>
     </html>
     `;
 };
 
-module.exports = generateHTML;
+module.exports = renderInput;

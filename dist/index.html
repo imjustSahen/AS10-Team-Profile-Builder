@@ -7,72 +7,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
     <title>Meet My Team</title>
   </head>
   <body>
       <header>
           <nav class="nav" id="nav">
-              <a href="#home" id="home">Meet My Team</a>
+              <a href="#home" id="home" class="team-name">Team Maker</a>
           </nav>
       </header>
       <main>
-          <div class="container" id="team-cards">
-                <!-- Display Cards -->
-                
+        <h1>Meet My Team</h1>
+        <hr id="header-spacer">
+        <div class="container" id="team-cards">
+              <!-- Display Cards -->
+              
         <div class="cards">
             <div class="card-header">
-                <h3>Salmon</h3>
-                <h4>Manager</h4><i class="fa fa-coffee" aria-hidden="true"></i>
+                <h3>Sahen</h3>
+                <hr class="line-spacer">
+                <h4>Manager <i class="fa fa-coffee" aria-hidden="true"></i></h4>
             </div>
             <div class="card-body">
-                <p class="id">ID: 34</p>
-                <p class="email">Email: <a href="mailto:garci@gmail.com">garci@gmail.com</a></p>
-                <p class="office">Office Number: 21</p>
-            </div>
-        </div>
-    
-        <div class="cards">
-            <div class="card-header">
-                <h3>Bob</h3>
-                <h4>Engineer</h4><i class="fa fa-desktop" aria-hidden="true"></i>
-            </div>
-            <div class="card-body">
-                <p class="id">ID: 53</p>
-                <p class="email">Email: <a href="mailto:garci@gmail.com">garci@gmail.com</a></p>
-                <p class="github">Github: <a href="https://github.com/imjustsahen">imjustsahen</a></p>
-            </div>
-        </div>
-    
-        <div class="cards">
-            <div class="card-header">
-                <h3>Fam</h3>
-                <h4>Intern</h4><i class="fa fa-graduation-cap" aria-hidden="true"></i>
-            </div>
-            <div class="card-body">
-                <p class="id">ID: 39</p>
-                <p class="email">Email: <a href="mailto:garci@gmail.com">garci@gmail.com</a></p>
-                <p class="school">School: U of O</p>
-            </div>
-        </div>
-    
-        <div class="cards">
-            <div class="card-header">
-                <h3>Salami</h3>
-                <h4>Engineer</h4><i class="fa fa-desktop" aria-hidden="true"></i>
-            </div>
-            <div class="card-body">
-                <p class="id">ID: 89</p>
+                <p class="id">ID: <span class="body-input">23</span></p>
                 <p class="email">Email: <a href="mailto:garcia@gmail.com">garcia@gmail.com</a></p>
-                <p class="github">Github: <a href="https://github.com/imjustsahen">imjustsahen</a></p>
+                <p class="office">Office Number: <span class="body-input">12</span></p>
             </div>
         </div>
     
-          </div>
+        <div class="cards">
+            <div class="card-header">
+                <h3>Sam</h3>
+                <hr class="line-spacer">
+                <h4>Engineer <i class="fa fa-desktop" aria-hidden="true"></i></h4>
+            </div>
+            <div class="card-body">
+                <p class="id">ID: <span class="body-input">54</span></p>
+                <p class="email">Email: <a href="mailto:garcia@gmail.com">garcia@gmail.com</a></p>
+                <p class="github">Github: <a href="https://github.com/imjustSahen" target="_blank" rel="noopener noreferrer">imjustSahen</a></p>
+            </div>
+        </div>
+    
+        <div class="cards">
+            <div class="card-header">
+                <h3>Jam</h3>
+                <hr class="line-spacer">
+                <h4>Intern <i class="fa fa-graduation-cap" aria-hidden="true"></i></h4>
+            </div>
+            <div class="card-body">
+                <p class="id">ID: <span class="body-input">34</span></p>
+                <p class="email">Email: <a href="mailto:garcia@gmail.com">garcia@gmail.com</a></p>
+                <p class="school">School: <span class="body-input">U of O</span></p>
+            </div>
+        </div>
+    
+        </div>
       </main>
       <footer>
         <h3>Designed By:</h3>
-        <p><a href="http://github.com/imjustSahen">imjustSahen</a></p>
+        <p><a href="http://github.com/imjustSahen" target="_blank" rel="noopener noreferrer">imjustSahen</a></p>
       </footer>
     </body>
     </html>
+
+    "inquirer": "^8.2.4",
+    "jest": "^29.3.1"
     

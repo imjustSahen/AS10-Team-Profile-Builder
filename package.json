@@ -1,4 +1,21 @@
 {
+  "name": "as10-team-profile-builder",
+  "version": "1.0.0",
+  "description": "Team Maker",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "AS10-Team-Profile-Builder"
+  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "inquirer": "^8.2.4",
     "jest": "^29.3.1"
